@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.header {color: #fff; overflow: hidden;}
+
+/* clock */
+.js-clock {margin: 15px;}
+.js-clock .ampm {font-size: 50px; margin-right: 5px;}
+.js-clock .time {font-size: 100px; word-spacing: -18px; letter-spacing: -5px;}
+
+/* weather */
+.weather { display: flex; align-items: center; position: absolute; top: 10px; right: 30px;}
+.icon {display: flex; height: 100px; font-size: 60px; justify-content: center; align-items: center;}
+.weather_info {display: flex; flex-direction: column; align-items: flex-start; margin-left: 13px; font-size: 28px; margin-bottom: 6px;}
+.weather_info p {font-size: 20px;}
+
+/* name */
+.name {display: flex; font-size: 34px; padding: 15px; margin-bottom: 15px; justify-content: center; align-items: center; text-align: center;}
+
+/* todoList */
+.todoList {
+    width: 60%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow:hidden;
+    flex-direction:row;
+    overflow: hidden;
+    text-align: center;
+}
+.todoList h3{ font-size: 30px; text-align: center; color: rgba(255, 235, 0); margin-bottom: 20px;}
+@keyframes opacityAni {
+    0%{opacity: 0;}
+}
+.todoList ul { display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.todoList li {
+    font-family: 'paybooc-Bold';
+    text-align: center; font-size: 18px; font-weight: 600; margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    position: relative;
+    animation: opacityAni 0.2s;
+}
+.todoList li button {position: absolute; font-size: 20px; width: 0; top: 12px; }
+.todoList li button.square {left: 20px;}
+.todoList li button.trash {right: 34px;}
+.todoList li span {display: inline-block;}
+.todoList .panding,
+.todoList .finished {float: left; width: 50%; padding: 20px; box-sizing: border-box; height: 100%; overflow-y: auto;}
+
+/* .todoList .finished */
+.todoList .finished li {opacity: 0.7; position: relative;}
+.todoList .finished li::after {
+    content: ''; width: 67%;
+    height: 2px; position: absolute; background: tomato;
+    top: 50%; left: 50%;
+    transform: translateX(-50%);
+}
+.todoList .finished li button {color: tomato;}
+
+/* input */
+input {
+    border: none;
+    font-size: 26px;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    transition: border-color 0.5s ease-in-out;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-style: italic;
+}
+input:focus {
+    outline:none;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+
+
