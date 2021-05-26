@@ -11,18 +11,18 @@ body {height: 100vh; display: flex; flex-direction: column; justify-content: cen
 .header {color: #fff; overflow: hidden;}
 
 /* clock */
-.js-clock {margin: 15px;}
-.js-clock .ampm {font-size: 50px; margin-right: 5px;}
-.js-clock .time {font-size: 100px; word-spacing: -18px; letter-spacing: -5px;}
+.js-clock {margin: 15px; text-align: center;}
+.js-clock .ampm {font-size: 2.6vw; margin-right: 5px;}
+.js-clock .time {font-size: 5vw; word-spacing: -1vw; letter-spacing: -0.2vw;}
 
 /* weather */
 .weather { display: flex; align-items: center; position: absolute; top: 10px; right: 30px;}
-.icon {display: flex; height: 100px; font-size: 60px; justify-content: center; align-items: center;}
-.weather_info {display: flex; flex-direction: column; align-items: flex-start; margin-left: 13px; font-size: 28px; margin-bottom: 6px;}
-.weather_info p {font-size: 20px;}
+.icon {display: flex; height: 100px; font-size: 3vw; justify-content: center; align-items: center;}
+.weather_info {display: flex; flex-direction: column; align-items: flex-start; margin-left: 13px; font-size: 1.4vw; margin-bottom: 6px;}
+.weather_info p {font-size: 1.2vw;}
 
 /* name */
-.name {display: flex; font-size: 34px; padding: 15px; margin-bottom: 15px; justify-content: center; align-items: center; text-align: center;}
+.name {display: flex; font-size: 1.7vw; padding: 15px; margin-bottom: 15px; justify-content: center; align-items: center; text-align: center;}
 
 /* todoList */
 .todoList {
@@ -37,14 +37,14 @@ body {height: 100vh; display: flex; flex-direction: column; justify-content: cen
     overflow: hidden;
     text-align: center;
 }
-.todoList h3{ font-size: 30px; text-align: center; color: rgba(255, 235, 0); margin-bottom: 20px;}
+.todoList h3{ font-size: 1.6vw; text-align: center; color: rgba(255, 235, 0); margin-bottom: 20px;}
 @keyframes opacityAni {
     0%{opacity: 0;}
 }
 .todoList ul { display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .todoList li {
     font-family: 'paybooc-Bold';
-    text-align: center; font-size: 18px; font-weight: 600; margin-bottom: 10px;
+    text-align: center; font-size: 0.9vw; font-weight: 600; margin-bottom: 10px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 10px;
@@ -53,9 +53,9 @@ body {height: 100vh; display: flex; flex-direction: column; justify-content: cen
     position: relative;
     animation: opacityAni 0.2s;
 }
-.todoList li button {position: absolute; font-size: 20px; width: 0; top: 12px; }
-.todoList li button.square {left: 20px;}
-.todoList li button.trash {right: 34px;}
+.todoList li button {position: absolute; font-size: 1.1vw; width: 0;}
+.todoList li button.square {left: 1.1vw;}
+.todoList li button.trash {right: 1.6vw;}
 .todoList li span {display: inline-block;}
 .todoList .panding,
 .todoList .finished {float: left; width: 50%; padding: 20px; box-sizing: border-box; height: 100%; overflow-y: auto;}
@@ -73,7 +73,7 @@ body {height: 100vh; display: flex; flex-direction: column; justify-content: cen
 /* input */
 input {
     border: none;
-    font-size: 26px;
+    font-size: 1.4vw;
     background-color: transparent;
     box-sizing: border-box;
     padding: 6px 10px;
